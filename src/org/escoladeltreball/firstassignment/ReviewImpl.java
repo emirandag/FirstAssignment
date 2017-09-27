@@ -9,6 +9,15 @@ package org.escoladeltreball.firstassignment;
  */
 public final class ReviewImpl implements Review {
 
+	private int frequency(int[] values, int n) {
+		int counter = 0;
+		for (int value : values) {
+			if (n == value) {
+				counter++;
+			}
+		}
+		return counter;
+	}
 	/*
 	 * (non-Javadoc)
 	 * 
@@ -18,7 +27,7 @@ public final class ReviewImpl implements Review {
 	 */
 	@Override
 	public double frequencyPercentage(int[] values, int n) {
-		return 0.0;
+		return values.length == 0 ? 0 : ((double) frequency(values, n)) / values.length * 100;
 	}
 
 	/*
