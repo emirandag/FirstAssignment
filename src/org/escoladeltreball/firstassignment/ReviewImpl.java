@@ -4,7 +4,7 @@
 package org.escoladeltreball.firstassignment;
 
 /**
- * @author Pep Méndez
+ * @author Pep Méndez.
  *
  */
 public final class ReviewImpl implements Review {
