@@ -18,14 +18,14 @@ import org.junit.Test;
  */
 public class ReviewImplTest {
 	
-	private static ReviewImpl main;
+	private static ProfeImpl main;
 
 	/**
 	 * @throws java.lang.Exception In some cases
 	 */
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
-		main = new ReviewImpl();
+		main = new ProfeImpl();
 	}
 
 	/**
