@@ -21,7 +21,7 @@ public class ReviewImplTest {
 	private static ReviewImpl main;
 
 	/**
-	 * @throws java.lang.Exception
+	 * @throws java.lang.Exception In some cases
 	 */
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -29,7 +29,7 @@ public class ReviewImplTest {
 	}
 
 	/**
-	 * @throws java.lang.Exception
+	 * @throws java.lang.Exception  In some cases
 	 */
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
@@ -37,14 +37,14 @@ public class ReviewImplTest {
 	}
 
 	/**
-	 * @throws java.lang.Exception
+	 * @throws java.lang.Exception In some cases
 	 */
 	@Before
 	public void setUp() throws Exception {
 	}
 
 	/**
-	 * @throws java.lang.Exception
+	 * @throws java.lang.Exception In some cases
 	 */
 	@After
 	public void tearDown() throws Exception {
@@ -52,7 +52,7 @@ public class ReviewImplTest {
 
 	/**
 	 * Test method for
-	 * {@link org.escoladeltreball.ReviewImpl.Main#frequencyPercentage(int[], int)}.
+	 * {@link org.escoladeltreball.firstassignment.ReviewImpl#frequencyPercentage(int[], int)}.
 	 */
 	@Test
 	public final void testFrequencyPercentage() {
@@ -66,7 +66,7 @@ public class ReviewImplTest {
 
 	/**
 	 * Test method for
-	 * {@link org.escoladeltreball.ReviewImpl.Main#merge(int[], int)}.
+	 * {@link org.escoladeltreball.firstassignment.ReviewImpl#merge(int[], int)}.
 	 */
 	@Test
 	public final void testMerge() {
@@ -82,7 +82,7 @@ public class ReviewImplTest {
 
 	/**
 	 * Test method for
-	 * {@link org.escoladeltreball.ReviewImpl.Main#split(int[])}.
+	 * {@link org.escoladeltreball.firstassignment.ReviewImpl#split(int[])}.
 	 */
 	@Test
 	public final void testSplit() {
