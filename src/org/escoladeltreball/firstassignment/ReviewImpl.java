@@ -42,4 +42,10 @@ public final class ReviewImpl implements Review {
 		return null;
 	}
 
+	@Override
+	public double[] basicStatistics(double[] values) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

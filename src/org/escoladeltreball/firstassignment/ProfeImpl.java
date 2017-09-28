@@ -94,4 +94,18 @@ public class ProfeImpl implements Review {
 		return values.length == 0 ? 0 : ((double) frequency(values, n)) / values.length * 100;
 	}
 
+	@Override
+	public double[] basicStatistics(double[] values) {
+		double[] ret = new double[2];
+		for (double value: values) {
+			ret[0] += value;
+		}
+		ret[0] /= values.length;
+		for (double value: values) {
+			ret[1] += Math.pow(value - ret[0] , 2);
+		}
+		ret[1] = Math.sqrt(ret[1] / values.length);
+		return ret;
+	}
+
 }
