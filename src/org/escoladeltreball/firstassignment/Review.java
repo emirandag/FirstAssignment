@@ -29,4 +29,9 @@ public interface Review {
 	 */
 	public abstract double frequencyPercentage(int[] values, int n);
 
+	/*
+	 * This method returns the average (in position 0) and the standard
+	 * deviation (in position 1) from a sample
+	 */
+	public abstract double[] basicStatistics(double[] values);
 }

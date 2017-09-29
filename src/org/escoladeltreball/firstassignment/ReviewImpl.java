@@ -4,7 +4,7 @@
 package org.escoladeltreball.firstassignment;
 
 /**
- * @author Pep Méndez
+ * @author Pep Méndez..
  *
  */
 public final class ReviewImpl implements Review {
@@ -39,6 +39,12 @@ public final class ReviewImpl implements Review {
 	 */
 	@Override
 	public int[][] split(int[] values) {
+		return null;
+	}
+
+	@Override
+	public double[] basicStatistics(double[] values) {
+		// TODO Auto-generated method stub
 		return null;
 	}
 
