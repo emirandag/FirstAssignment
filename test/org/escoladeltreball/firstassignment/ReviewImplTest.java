@@ -55,6 +55,7 @@ public class ReviewImplTest {
 	 * Test method for
 	 * {@link org.escoladeltreball.ReviewImpl.Main#frequencyPercentage(int[], int)}.
 	 */
+	@Ignore
 	@Test
 	public final void testFrequencyPercentage() {
 		int[] values = { 3, 4, 3, 5, 1, 2, 3, 0 };
@@ -69,7 +70,7 @@ public class ReviewImplTest {
 	 * Test method for
 	 * {@link org.escoladeltreball.ReviewImpl.Main#merge(int[], int)}.
 	 */
-	@Ignore
+	
 	@Test
 	public final void testMerge() {
 		int[] values = { 1, 2, 3, 5, 7, 9, 11, 15 };

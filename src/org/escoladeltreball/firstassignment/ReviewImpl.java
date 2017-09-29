@@ -46,19 +46,21 @@ public final class ReviewImpl implements Review {
 	 */
 	@Override
 	public int[] merge(int[] values, int n) {
-		int[] merge = new int [values.length+1];
+		
+		int[] result = new int[values.length + 1];
 		int i = 0;
 		
 		while (i < values.length && values[i] <= n) {
-			merge[i] = values[i];
+			result[i] = values[i];
 			i++;
 		}
+		result[i] = n;
+		for(;i<values.length;i++) {
+			result[i + 1] = values[i];
+		}	
+	
+		return result;
 		
-		merge[i] = n;
-		for (; i < values.length ; i++) {
-			merge[i+1] = values[i];
-		}
-		return merge;
 	}
 
 	/*
@@ -70,26 +72,32 @@ public final class ReviewImpl implements Review {
 	@Override
 	public int[][] split(int[] values) {
 		int [][] matriz = new int [2][];
-		int evenNum = 0 , evenCount = 0, oddNum = 0, oddCount = 0;
+		int par = 0;
+		int impar = 0;
+		int parcount =  0;
+		int imparcount = 0;
 		
-		for (int value : values) {
-			if (value%2==0){
-				evenCount++;
+		for (int i = 0 ; i < values.length; i++) {
+			if (values[i]%2==0){
+				parcount++;
+				
 			} else {
-				oddCount++;
+				imparcount++;
+				
 			}
 		}
-		
-			matriz [0] = new int [evenCount];
-			matriz [1] = new int [oddCount];
-			
-			for (int value : values) {
-				if (value%2==0) {
-					matriz[0][evenNum++] = value;
-				} else {
-					matriz[1][oddNum++] = value;
-				}
+		matriz[0] = new int [parcount];
+		matriz[1] = new int [imparcount];
+		for (int i = 0 ; i < values.length; i++) {
+			if (values[i]%2==0){
+				
+				matriz[0][par++] = values[i];
+			} else {
+				
+				matriz[1][impar++] = values[i];
 			}
+		}
+			
 		return matriz;
 	}
 		
